@@ -1,1 +1,211 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(124, 85, 188);
+    
+}
+ .container-main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+ }
+ .container{
+    height: 80%;
+    width: 80%;
+    background-color: red;
+    margin-top: 30px;
+    border: 5px solid white;
+    border-radius: 9px;
+    overflow-x: hidden;
+    /* z-index: 1; */
+ }
+ .main-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 25px;
+    background-color: #4f5c6b;
+    color: white;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .mobile-number,
+  .email-id {
+    margin-right: auto;
+  }
+  
+  .picture-email img {
+    margin-right: 10px;
+  }
+  
+  .button a {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Optional: Adjust button styles on hover */
+  .button a:hover {
+    background-color: #003a75;
+  }
+
+  .lower-navigation{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 25px;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  heading h3 {
+    margin: 0;
+}
+/* .lower-navigation:hover{
+    transition: all 77ms;
+    transform: scale(1);
+    background-color: #4f5c6b;
+} */
+
+.center-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    z-index: 2;
+}
+.center-navigation .nav-item:hover{
+    transition: all 77ms;
+    transform: scale(1.1);
+    /* background-color: #4f5c6b; */
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.background-image {
+    position: relative;
+    background: url("https://www.fastmed.com/wp-content/uploads/doctor_checking_girls_throat-1200x800.jpg") center/cover no-repeat fixed;
+    height: 500px; /* Set the desired height */
+    opacity: 0.9;
+  
+
+}
+
+#heading-doc {
+    position: absolute;
+    bottom: 0;
+    top: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 20px;
+    width: 100%;
+    color: rgb(69, 44, 44);
+}
+
+#heading-doc h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.card-container{
+    position: absolute;
+    bottom: 35px;
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    width: 80%;
+    padding: 0 20px;
+}
+.card {
+    flex: 1;
+    background-color: white;
+    
+    border-radius: 5px;
+    font-family: cursive;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 0;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+.card:hover{
+    transition-property: all 1s;
+    background: rgb(162, 154, 141);
+    transform: scale(1.1);
+
+}
+@media screen and (max-width: 1200px) {
+    .card-container {
+        flex-direction: column; /* Stack cards in a column */
+        background-color: #f5f5f5;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
